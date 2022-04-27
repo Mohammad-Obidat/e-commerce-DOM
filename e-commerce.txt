@@ -1,0 +1,72 @@
+1. Description
+The goal of this project is to create a simple e-commerce website. 
+This can be a little challenging with your current knowledge, so take it slowly, 
+read through all of the instructions before you start, and use Google :)
+The site should have a navigation bar with 3 buttons:
+About Us - when clicked there should be some HTML rendered with some information about the website 
+(feel free to get creative)
+All Products - when clicked it should render different HTML on the page which displays a list of all the products
+Each product should also have an add to cart button.
+Cart Page - when clicked it should render new HTML to the page which will display all items 
+that are already added to the cart (here items can have a delete from cart button)
+Note: You can use modules, but don’t need to if you’re not sure how.
+Additionally, feel free to be as creative as you want. The idea is to explore and challenge yourself. 
+You don’t necessarily need to add all the features or go exactly according to the instructions.
+
+2. To Do
+Start by creating two arrays, one named cart (which can be initialized as an empty array) 
+and the second called products. Products should be initialized with an array of products, 
+where each product is an object with the following properties:
+name - a string which represents the name of the product
+price - a number which represents the price of the product
+img - a url for an image- you can find something online and copy it’s ‘image-url’
+4 or 5 dummy products is enough
+Now, create the basic layout of how your web page is going to look. 
+Make sure you have a div that acts as a content-container. 
+This container is where you will be appending the different type of content (about us, all products, cart items).
+Note the container should start out empty.
+Let’s add some functionality to the web app:
+Create a function in your JS that renders the about us content (which should just be a string). 
+Have it invoked when the About Us button (in the nav-bar) is clicked. You can use an event listener to do this.
+Create a function that renders all of the products (in your products array). 
+Have it invoked when the All Products button is clicked (you can use an event listener for this).
+Create a function that renders all of the products in your cart 
+(you can start with one or two products in your cart array as dummy data). 
+This function should be invoked when the Cart button is clicked.
+You should empty the content-container at the beginning of each function, 
+and append all information to the same content-container.
+Great job on making it this far! You should have a website that has "three pages". 
+You should be able to navigate to each one by clicking a button in the nav-bar.
+
+3. Adding Features
+The following two features can be slightly tricky (given what you haven’t learned yet), 
+but we believe in you! Use Google if you need help.
+Add an item to your cart:
+Create a function named addToCart which receives a product object and adds it to your cart array.
+Add an event that triggers when a user clicks the Add to cart button on a given product. 
+This event should invoke the addToCart function with the current product.
+There are multiple ways to do this, feel free to get creative
+Deleting an item from your cart:
+Create a deleteFromCart function which receives a product object, 
+finds it in the cart array and deletes it from the array.
+Add an event that triggers when a user clicks the Delete from cart button on a given product (in your cart). 
+This event should invoke the deleteFromCart function with the current product.
+Again, there are multiple ways to do this, try and get creative.
+Hint 1: Don’t rely on what appears on the page to understand what’s in the cart array. 
+Use the debugger to see if the array updates after the the button is clicked.
+Hint 2: After deleting an item from your cart array, 
+make sure to re-invoke your function that displays all the products in your cart (your Cart page). 
+This will result in the page refreshing every time the array changes.
+
+4. Styling
+Now that your site works the way it should, let’s make it look great!
+Add some styling to make it look like a real web store. Choose some cool colors, 
+and maybe make the nav-bar sticky. Check out some of these for inspiration.
+Did you know that 70% of initial traffic to e-commerce websites are on mobile. 
+So, let’s make it responsive. Add some media queries to make it look good on mobile and on desktop.
+
+5. Extension
+This extension might be extra challenging.
+Try adding a counter beside the Cart button. 
+This counter should always show the amount of items in currently in your cart array.
+Note: You may need to add some extra functions for this.

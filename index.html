@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Commerce-DOM</title>
+  </head>
+  <body>
+    <div id="nav-container">
+      <div class="main-items">
+        <button class="nav-item" onclick="renderAboutUs()">About Us</button>
+        <button class="nav-item" onclick="renderProdectList()">
+          All Products
+        </button>
+        <button class="nav-item" onclick="renderCart()">Cart</button>
+      </div>
+      <div class="nav-item logo-container">
+        <p>The Company Name</p>
+        <p>We do it best.</p>
+      </div>
+    </div>
+
+    <div id="content-container"></div>
+
+    <script src="./JS/products.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
